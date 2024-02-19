@@ -1,0 +1,15 @@
+version: '3'
+services:
+  app:
+    build: .
+    image: 'phumin/app:1.0.0'
+    container_name: my-app
+    ports: '132.168.1.36'
+    environment:
+      - DATABASE_CLIENT=postgres
+      - DATABASE_HOST=192.168.1.36
+      - DATABASE_PORT=54321
+      - DATABASE_NAME=phumin
+      - DATABASE_USERNAME=phumin
+      - DATABASE_PASSWORD=nongphumphumin1
+      - DATABASE_SSL=false
