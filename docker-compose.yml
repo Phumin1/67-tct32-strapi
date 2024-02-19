@@ -4,4 +4,3 @@ services:
     build: .
     image: 'phumin/app:1.0.0'
     container_name: my-app
-
