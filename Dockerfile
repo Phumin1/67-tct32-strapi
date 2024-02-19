@@ -11,7 +11,6 @@ WORKDIR /opt/app
 COPY . .
 RUN npm install
 RUN npm run build
-
 # Creating final production image
 FROM node:20-alpine
 RUN apk add --no-cache vips-dev
